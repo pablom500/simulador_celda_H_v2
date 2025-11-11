@@ -42,7 +42,7 @@ simulador_celda_H_v2/
 │   ├── assets/custom.css      # Estilos (tipografía, tooltips, layout)
 │   └── requirements.txt       # Dependencias frontend
 ├── ejemplo_simulador.py       # Script CLI de ejemplo
-├── diagrama_flujo_simulador.md# Flowchart Mermaid del núcleo
+├── diagrama.svg               # Esquema de arquitectura y flujo
 └── README.md                  # Este documento
 ```
 
@@ -141,8 +141,12 @@ Todos estos parámetros pueden modificarse en `simulador/data.py` o sustituyendo
   - Resultado numérico.
 - La GUI usa esta información para mostrar tanto resúmenes como la lista completa de ecuaciones, lo que facilita validar cada término frente a la teoría.
 
-## Diagrama de flujo
+## Diagrama de arquitectura y flujo
 
-El archivo [`diagrama_flujo_simulador.md`](./diagrama_flujo_simulador.md) describe, mediante un flowchart Mermaid, la arquitectura completa y el flujo lógico del simulador. Útil para especialistas que deseen revisar los supuestos o proponer nuevas rutas cinéticas.
+En `diagrama.svg` encontrarás un esquema visual listo para insertar en presentaciones o documentos técnicos. Resume:
 
+1. Los módulos principales (`constants`, `models`, `data`, `electrochemistry`, `detail`, `orr`, `simulation`) y sus dependencias.
+2. El flujo de trabajo: definición de condiciones, construcción de `ElectrolyzerConfig`, evaluación punto a punto y análisis ORR.
+3. Las salidas disponibles (curva de polarización detallada y análisis de actividad catalítica).
 
+Puedes abrirlo con cualquier visor SVG o incrustarlo directamente en reportes para compartir la arquitectura del simulador con otros especialistas.
