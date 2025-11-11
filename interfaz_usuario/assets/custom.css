@@ -30,3 +30,30 @@ h1.display-5 {
 .navbar {
     background-color: var(--brand-primary);
 }
+
+.label-with-info {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: rgba(0, 109, 119, 0.12);
+    color: #006d77;
+    font-size: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info-icon:focus {
+    outline: 2px solid #006d77;
+    outline-offset: 1px;
+}

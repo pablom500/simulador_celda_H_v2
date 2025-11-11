@@ -73,7 +73,7 @@ _PT_INTERMEDIATES = {
 
 CATALYSTS = {
     "Pt": Catalyst(
-        name="Pt(111)",
+        name="Pt",
         d_e_o=1.57,
         d_e_oh=1.05,
         delta_g1_u0=0.45,
@@ -82,7 +82,7 @@ CATALYSTS = {
         intermediates=_PT_INTERMEDIATES,
     ),
     "Pd": Catalyst(
-        name="Pd(111)",
+        name="Pd",
         d_e_o=1.53,
         d_e_oh=0.92,
         delta_g1_u0=0.36,
@@ -90,7 +90,7 @@ CATALYSTS = {
         dissociation_barrier=0.15,
     ),
     "Au": Catalyst(
-        name="Au(111)",
+        name="Au",
         d_e_o=2.75,
         d_e_oh=1.49,
         delta_g1_u0=-0.29,
@@ -98,7 +98,7 @@ CATALYSTS = {
         dissociation_barrier=2.06,
     ),
     "Ni": Catalyst(
-        name="Ni(111)",
+        name="Ni",
         d_e_o=0.34,
         d_e_oh=0.13,
         delta_g1_u0=0.76,
@@ -106,7 +106,7 @@ CATALYSTS = {
         dissociation_barrier=0.40,
     ),
     "Ir": Catalyst(
-        name="Ir(111)",
+        name="Ir",
         d_e_o=1.0,
         d_e_oh=0.63,
         delta_g1_u0=0.60,
@@ -114,7 +114,7 @@ CATALYSTS = {
         dissociation_barrier=0.20,
     ),
     "Rh": Catalyst(
-        name="Rh(111)",
+        name="Rh",
         d_e_o=0.44,
         d_e_oh=0.34,
         delta_g1_u0=0.87,

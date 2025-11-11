@@ -9,11 +9,12 @@ Este paquete agrupa utilidades para:
 * Explorar el desempeno de catalizadores mediante funciones de mas alto nivel.
 """
 
-from . import constants, data, electrochemistry, models, orr, simulation
+from . import constants, data, detail, electrochemistry, models, orr, simulation
 
 __all__ = [
     "constants",
     "data",
+    "detail",
     "electrochemistry",
     "models",
     "orr",
